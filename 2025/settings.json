@@ -142,6 +142,7 @@
   "containers.containerClient": "com.microsoft.visualstudio.containers.docker",
   "docker.extension.enableComposeLanguageServer": false,
   "docker.languageserver.formatter.ignoreMultilineInstructions": true,
+  "containers.orchestratorClient": "com.microsoft.visualstudio.orchestrators.dockercompose",
 
   // ─── Search & Security ─────────────────────────────────────────────
   "security.workspace.trust.untrustedFiles": "open",
@@ -318,6 +319,5 @@
     "xvda",
     "YYYYMMDDH",
     "zustand"
-  ],
-  "containers.orchestratorClient": "com.microsoft.visualstudio.orchestrators.dockercompose"
+  ]
 }
