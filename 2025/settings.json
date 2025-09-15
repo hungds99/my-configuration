@@ -1,85 +1,45 @@
 {
-  // Bracket
+  // ─── Brackets ───────────────────────────────────────────────────────
   "editor.bracketPairColorization.enabled": true,
   "editor.guides.bracketPairs": "active",
-  // Coding
+
+  // ─── Coding ─────────────────────────────────────────────────────────
   "editor.formatOnSave": true,
-  // Font
-  // "editor.fontFamily": "Monaspace Neon, monospace",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "diffEditor.ignoreTrimWhitespace": false,
+  "editor.inlayHints.enabled": "on",
+  "editor.accessibilitySupport": "off",
+
+  // ─── Font ───────────────────────────────────────────────────────────
   "editor.fontFamily": "JetBrains Mono, ‘Monaspace Neon’, monospace",
   "editor.fontVariations": "‘wght’ 350",
   "editor.fontLigatures": "'ss01', 'ss19', 'cv03', 'zero'", // JetBrains Mono
-  // "editor.fontLigatures": "‘ss01’, ‘ss02’, ‘ss03’, ‘ss04’, ‘ss05’, ‘ss06’, ‘ss07’, ‘ss08’, ‘calt’, ‘dlig’", // monaspace
   "editor.fontSize": 13,
   "editor.lineHeight": 30,
   "editor.letterSpacing": 0.5,
   "editor.fontWeight": 500,
-  // Cursor
+
+  // ─── Cursor ─────────────────────────────────────────────────────────
   "editor.cursorBlinking": "smooth",
   "editor.smoothScrolling": true,
   "editor.cursorSmoothCaretAnimation": "on",
   "editor.cursorStyle": "line",
-  "workbench.iconTheme": "material-icon-theme",
-  // Explorer
+
+  // ─── Explorer ───────────────────────────────────────────────────────
   "explorer.confirmDelete": true,
   "explorer.confirmDragAndDrop": true,
-  // Terminal
+  "explorer.compactFolders": false,
+
+  // ─── Terminal ──────────────────────────────────────────────────────
   "terminal.integrated.fontSize": 14,
   "terminal.integrated.lineHeight": 1.5,
-  // "terminal.integrated.fontFamily": "JetBrains Mono",
   "terminal.integrated.cursorStyle": "line",
   "terminal.integrated.cursorBlinking": true,
   "terminal.integrated.env.osx": {
     "FIG_NEW_SESSION": "1",
     "CW_NEW_SESSION": "1",
     "Q_NEW_SESSION": "1"
-  },
-  // Parameter
-  "inline-parameters.enabled": false,
-  "editor.inlayHints.enabled": "on",
-  // Workbench
-  "workbench.list.smoothScrolling": true,
-  "workbench.editor.enablePreview": true,
-  "workbench.colorCustomizations": {},
-  // Git
-  "git.enableSmartCommit": true,
-  "git.autofetch": true,
-  "git.fetchOnPull": true,
-  // Format Prettier
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "prettier.singleQuote": true,
-  "prettier.jsxSingleQuote": true,
-  "prettier.trailingComma": "all",
-  "prettier.printWidth": 100,
-  "prettier.tabWidth": 2,
-  "prettier.semi": true,
-  // Shopify
-  "[liquid]": {
-    "editor.defaultFormatter": "Shopify.theme-check-vscode"
-  },
-  // Material Icon Theme
-  "material-icon-theme.files.color": "#26A69A",
-  "material-icon-theme.activeIconPack": "react_redux",
-  "typescript.updateImportsOnFileMove.enabled": "always",
-  "security.workspace.trust.untrustedFiles": "open",
-  "github.copilot.enable": {
-    "*": true,
-    "plaintext": false,
-    "markdown": true,
-    "scminput": false
-  },
-  "diffEditor.ignoreTrimWhitespace": false,
-  "explorer.compactFolders": false,
-  "[prisma]": {
-    "editor.defaultFormatter": "Prisma.prisma"
-  },
-  // Emmet
-  "emmet.includeLanguages": {
-    "postcss": "css"
-  },
-  "gitlens.graph.minimap.enabled": false,
-  "remote.SSH.remotePlatform": {
-    "sandbox.2k2lnc.csb": "linux"
   },
   "terminal.integrated.allowedLinkSchemes": [
     "file",
@@ -90,46 +50,103 @@
     "vscode-insiders",
     "docker-desktop"
   ],
-  "liveServer.settings.donotShowInfoMsg": true,
-  "redhat.telemetry.enabled": false,
+  "terminal.integrated.suggest.enabled": true,
+
+  // ─── Workbench ─────────────────────────────────────────────────────
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.list.smoothScrolling": true,
+  "workbench.editor.enablePreview": true,
+  "workbench.editor.empty.hint": "hidden",
+  "workbench.colorCustomizations": {},
   "workbench.activityBar.location": "top",
-  "typeChallenges.workspaceFolder": "/Users/hung.dinh/.typeChallenges",
-  "[json]": {
-    "editor.defaultFormatter": "vscode.json-language-features"
-  },
+  "workbench.colorTheme": "Dracula Theme",
+
+  // ─── Git ───────────────────────────────────────────────────────────
+  "git.enableSmartCommit": true,
+  "git.autofetch": true,
+  "git.fetchOnPull": true,
   "git.confirmSync": false,
-  "explorer.fileNesting.patterns": {
-    "*.ts": "${capture}.js",
-    "*.js": "${capture}.js.map, ${capture}.min.js, ${capture}.d.ts",
-    "*.jsx": "${capture}.js",
-    "*.tsx": "${capture}.ts",
-    "tsconfig.json": "tsconfig.*.json",
-    "package.json": "package-lock.json, yarn.lock, pnpm-lock.yaml, bun.lockb",
-    "*.sqlite": "${capture}.${extname}-*",
-    "*.db": "${capture}.${extname}-*",
-    "*.sqlite3": "${capture}.${extname}-*",
-    "*.db3": "${capture}.${extname}-*",
-    "*.sdb": "${capture}.${extname}-*",
-    "*.s3db": "${capture}.${extname}-*"
+  "git.openRepositoryInParentFolders": "never",
+
+  // ─── Prettier ──────────────────────────────────────────────────────
+  "prettier.singleQuote": true,
+  "prettier.jsxSingleQuote": true,
+  "prettier.trailingComma": "all",
+  "prettier.printWidth": 100,
+  "prettier.tabWidth": 2,
+  "prettier.semi": true,
+
+  // ─── Language Formatters ───────────────────────────────────────────
+  "[liquid]": {
+    "editor.defaultFormatter": "Shopify.theme-check-vscode"
+  },
+  "[prisma]": {
+    "editor.defaultFormatter": "Prisma.prisma"
   },
   "[terraform]": {
     "editor.defaultFormatter": "hashicorp.terraform"
   },
-  "git.openRepositoryInParentFolders": "never",
-  "search.exclude": {
-    "**/.next": true
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
   },
-  "chat.agent.enabled": true,
+
+  // ─── Extensions & Themes ───────────────────────────────────────────
+  "material-icon-theme.files.color": "#26A69A",
+  "material-icon-theme.activeIconPack": "react_redux",
+  "gitlens.graph.minimap.enabled": false,
+  "liveServer.settings.donotShowInfoMsg": true,
+  "redhat.telemetry.enabled": false,
+  "settingsSync.ignoredExtensions": [],
+  "typeChallenges.workspaceFolder": "/Users/hung.dinh/.typeChallenges",
+  "emmet.includeLanguages": {
+    "postcss": "css"
+  },
+
+  // ─── Copilot & GitHub ──────────────────────────────────────────────
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": false,
+    "markdown": true,
+    "scminput": false
+  },
   "github.copilot.chat.agent.thinkingTool": true,
   "github.copilot.nextEditSuggestions.enabled": true,
-  "containers.containerClient": "com.microsoft.visualstudio.containers.docker",
-  "docker.extension.enableComposeLanguageServer": false,
+  "github.copilot.chat.codesearch.enabled": true,
+  "github.copilot.chat.languageContext.fix.typescript.enabled": true,
+  "github.copilot.chat.languageContext.inline.typescript.enabled": true,
+  "github.copilot.chat.languageContext.typescript.enabled": true,
+  "github.copilot.chat.editor.temporalContext.enabled": true,
+  "github.copilot.chat.edits.temporalContext.enabled": true,
+
+  // ─── Chat & Agents ─────────────────────────────────────────────────
+  "chat.agent.enabled": true,
+  "chat.mcp.access": "all",
   "chat.mcp.serverSampling": {
     "Global in Code: terraform": {
       "allowedModels": ["github.copilot-chat/gpt-4.1"]
     }
   },
-  // Spell Checker
+  "chat.todoListTool.enabled": true,
+  "chat.agentSessionsViewLocation": "view",
+  "chat.agent.maxRequests": 100,
+
+  // ─── GitHub Pull Requests ──────────────────────────────────────────
+  "githubPullRequests.codingAgent.uiIntegration": true,
+  "githubPullRequests.experimental.useQuickChat": true,
+  "githubPullRequests.createOnPublishBranch": "never",
+
+  // ─── Remote & Containers ───────────────────────────────────────────
+  "remote.SSH.remotePlatform": {
+    "sandbox.2k2lnc.csb": "linux"
+  },
+  "containers.containerClient": "com.microsoft.visualstudio.containers.docker",
+  "docker.extension.enableComposeLanguageServer": false,
+  "docker.languageserver.formatter.ignoreMultilineInstructions": true,
+
+  // ─── Search & Security ─────────────────────────────────────────────
+  "security.workspace.trust.untrustedFiles": "open",
+
+  // ─── Spell Check ──────────────────────────────────────────────────
   "cSpell.userWords": [
     "accval",
     "ALBDNS",
@@ -217,6 +234,7 @@
     "namecards",
     "neondatabase",
     "NEXTAUTH",
+    "Nextbase",
     "nextjs",
     "noopener",
     "Novu",
@@ -301,24 +319,5 @@
     "YYYYMMDDH",
     "zustand"
   ],
-  "githubPullRequests.codingAgent.uiIntegration": true,
-  "github.copilot.chat.codesearch.enabled": true,
-  "github.copilot.chat.languageContext.fix.typescript.enabled": true,
-  "github.copilot.chat.languageContext.inline.typescript.enabled": true,
-  "github.copilot.chat.languageContext.typescript.enabled": true,
-  "makefile.configureOnOpen": false,
-  "workbench.editor.empty.hint": "hidden",
-  "chat.todoListTool.enabled": true,
-  "chat.agentSessionsViewLocation": "view",
-  "workbench.colorTheme": "Dracula Theme",
-  "settingsSync.ignoredExtensions": [],
-  "terminal.integrated.suggest.enabled": true,
-  "chat.agent.maxRequests": 100,
-  "github.copilot.chat.editor.temporalContext.enabled": true,
-  "github.copilot.chat.edits.temporalContext.enabled": true,
-  "githubPullRequests.experimental.useQuickChat": true,
-  "docker.languageserver.formatter.ignoreMultilineInstructions": true,
-  "githubPullRequests.createOnPublishBranch": "never",
-  "chat.mcp.access": "all",
-  "editor.accessibilitySupport": "off"
+  "containers.orchestratorClient": "com.microsoft.visualstudio.orchestrators.dockercompose"
 }
