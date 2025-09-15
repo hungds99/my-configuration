@@ -1,17 +1,13 @@
 {
-  // ─── Brackets ───────────────────────────────────────────────────────
-  "editor.bracketPairColorization.enabled": true,
-  "editor.guides.bracketPairs": "active",
-
-  // ─── Coding ─────────────────────────────────────────────────────────
-  "editor.formatOnSave": true,
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  // ─── Common ───────────────────────────────────────────────────────
   "typescript.updateImportsOnFileMove.enabled": "always",
   "diffEditor.ignoreTrimWhitespace": false,
+
+  // ─── Coding Editor ─────────────────────────────────────────────────────────
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.inlayHints.enabled": "on",
   "editor.accessibilitySupport": "off",
-
-  // ─── Font ───────────────────────────────────────────────────────────
   "editor.fontFamily": "JetBrains Mono, ‘Monaspace Neon’, monospace",
   "editor.fontVariations": "‘wght’ 350",
   "editor.fontLigatures": "'ss01', 'ss19', 'cv03', 'zero'", // JetBrains Mono
@@ -19,12 +15,12 @@
   "editor.lineHeight": 30,
   "editor.letterSpacing": 0.5,
   "editor.fontWeight": 500,
-
-  // ─── Cursor ─────────────────────────────────────────────────────────
   "editor.cursorBlinking": "smooth",
   "editor.smoothScrolling": true,
   "editor.cursorSmoothCaretAnimation": "on",
   "editor.cursorStyle": "line",
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": "active",
 
   // ─── Explorer ───────────────────────────────────────────────────────
   "explorer.confirmDelete": true,
@@ -60,6 +56,7 @@
   "workbench.colorCustomizations": {},
   "workbench.activityBar.location": "top",
   "workbench.colorTheme": "Dracula Theme",
+  "workbench.fontAliasing": "auto",
 
   // ─── Git ───────────────────────────────────────────────────────────
   "git.enableSmartCommit": true,
@@ -93,7 +90,6 @@
   // ─── Extensions & Themes ───────────────────────────────────────────
   "material-icon-theme.files.color": "#26A69A",
   "material-icon-theme.activeIconPack": "react_redux",
-  "gitlens.graph.minimap.enabled": false,
   "liveServer.settings.donotShowInfoMsg": true,
   "redhat.telemetry.enabled": false,
   "settingsSync.ignoredExtensions": [],
@@ -101,6 +97,11 @@
   "emmet.includeLanguages": {
     "postcss": "css"
   },
+
+  // ─── GitLens ────────────────────────────────────────────────────────
+  "gitlens.graph.minimap.enabled": false,
+  "gitlens.ai.model": "vscode",
+  "gitlens.ai.vscode.model": "copilot:claude-3.7-sonnet-thought",
 
   // ─── Copilot & GitHub ──────────────────────────────────────────────
   "github.copilot.enable": {
@@ -126,25 +127,15 @@
       "allowedModels": ["github.copilot-chat/gpt-4.1"]
     }
   },
-  "chat.todoListTool.enabled": true,
   "chat.agentSessionsViewLocation": "view",
   "chat.agent.maxRequests": 100,
 
-  // ─── GitHub Pull Requests ──────────────────────────────────────────
-  "githubPullRequests.codingAgent.uiIntegration": true,
-  "githubPullRequests.experimental.useQuickChat": true,
-  "githubPullRequests.createOnPublishBranch": "never",
-
   // ─── Remote & Containers ───────────────────────────────────────────
-  "remote.SSH.remotePlatform": {
-    "sandbox.2k2lnc.csb": "linux"
-  },
   "containers.containerClient": "com.microsoft.visualstudio.containers.docker",
-  "docker.extension.enableComposeLanguageServer": false,
-  "docker.languageserver.formatter.ignoreMultilineInstructions": true,
   "containers.orchestratorClient": "com.microsoft.visualstudio.orchestrators.dockercompose",
+  "docker.languageserver.formatter.ignoreMultilineInstructions": true,
 
-  // ─── Search & Security ─────────────────────────────────────────────
+  // ─── Security ─────────────────────────────────────────────
   "security.workspace.trust.untrustedFiles": "open",
 
   // ─── Spell Check ──────────────────────────────────────────────────
